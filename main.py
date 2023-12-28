@@ -104,7 +104,7 @@ print(f'Random Forest Model Mean Absolute Error: {rf_val_mae}')
 
 # Function to create synthetic data
 def create_synthetic_data(original_data, n_samples=10):
-    np.random.seed(0)
+    # np.random.seed(1)
     
     # Randomly sample values from specified columns
     Total_Volume = np.random.choice(original_data['Total Volume'], size=n_samples)
